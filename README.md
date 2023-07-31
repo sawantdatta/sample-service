@@ -4,12 +4,12 @@ Below steps need to follow : -
 1. Create Login account into Docker Desktop
 2. Create sample application
 3. go to root of sample applcation
-4. Create Repo int the Docker Desktop -> datta1981/javaprojects/
+4. Create Repo int the Docker Desktop -> <ex.datta1981/javaprojects/>
 5. Execute command from the power shell to cerate image
-  ** docker build -t <image-name sample-service-1.0.0> .**
+  **docker build -t <image-name sample-service-1.0.0> .**
 6. Type docker images this command will lisrt down the images that are created
 7. Tag docker image to the docker desktop repo
-   ** docker tag  <sample-service-1.0.0> <datta1981/javaprojects>**
+   **docker tag  <sample-service-1.0.0> <datta1981/javaprojects>**
 8. Push image into docker hub
    **docker push datta1981/javaprojects**
 9. Type docker images this command will show 2 images 1 application image and 2 repo image
@@ -25,7 +25,7 @@ Below steps need to follow : -
 15. Now open browser:-
   **http://localhost:8080/api/v1/**  hit enter below raw data get displayed in browser.
    {"last name":"XYZ","first name":"ABC","mobile number":"123456789"}
-    
-    
+16. You tube line for reference: -
+   **https://www.youtube.com/watch?v=SzbeDqBSRkc**
     
     
