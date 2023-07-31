@@ -1,0 +1,15 @@
+1. create spring boot application
+2. Create dockerfile with below details in application root:- 
+    FROM openjdk
+    WORKDIR /app
+    COPY target/sample-service-1.0.0.jar .
+    CMD ["java","-jar","sample-service-1.0.0.jar"]
+    EXPOSE 8084
+2. go to application root -> docker build -t <sampleserviceimage> .
+3. go to application root -> docker images
+4. go to application root -> docker run --name <samepleProject ContainerName> -it -d <sampleserviceimage imageName>
+5. go to application root -> docker ps
+6. go to application root -> docker logs <ContainerName>
+7. go to application root -> docker stop <ContainerName> execute 7 and 8 step if error occur
+8. go to application root -> docker run --name <samepleProject ContainerName> -it -p 8084:8084 -d <sampleserviceimage imageName>
+7. go to application root -> http://localhost:8084/api/v1/
